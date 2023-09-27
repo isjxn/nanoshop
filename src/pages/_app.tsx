@@ -6,6 +6,7 @@ import { api } from "~/utils/api";
 
 import "~/styles/globals.css";
 import { NextUIProvider } from "@nextui-org/react";
+import NanoNavbar from "~/components/NanoNavbar";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
@@ -14,6 +15,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
   return (
     <SessionProvider session={session}>
       <NextUIProvider>
+        <NanoNavbar />
         <Component {...pageProps} />
       </NextUIProvider>
     </SessionProvider>
