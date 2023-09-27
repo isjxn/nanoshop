@@ -1,3 +1,14 @@
+import { Button } from "@nextui-org/react";
+
+export default function Home() {
+  return (
+    <>
+      <Button>Click me</Button>
+    </>
+  )
+}
+
+/*
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
@@ -78,3 +89,4 @@ function AuthShowcase() {
     </div>
   );
 }
+*/
