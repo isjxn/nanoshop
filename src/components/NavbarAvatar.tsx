@@ -8,10 +8,8 @@ export default function NavbarAvatar() {
     <Dropdown placement="bottom-end">
       <DropdownTrigger>
         <Avatar
-          isBordered
           as="button"
           className="transition-transform"
-          color="secondary"
           name={sessionData?.user?.name ?? "unknown"}
           size="sm"
           src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
