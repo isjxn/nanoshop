@@ -5,7 +5,7 @@ import NavbarAvatar from "./NavbarAvatar";
 import { usePathname } from "next/navigation";
 import navbarConfig from "~/config/navbar.config";
 import { ThemeSwitcher } from "./ThemeSwitcher";
-import { FaCartShopping } from 'react-icons/fa6';
+import ShoppingCart from "./ShoppingCart";
 
 export default function NanoNavbar() {
   const { data: sessionData } = useSession();
@@ -27,9 +27,7 @@ export default function NanoNavbar() {
       </NavbarContent>
       <NavbarContent justify="end">
         <ThemeSwitcher />
-        <Button isIconOnly aria-label="Cart">
-          <FaCartShopping />
-        </Button>
+        <ShoppingCart />
         {sessionData ? (
           <NavbarAvatar />
         ) : (
